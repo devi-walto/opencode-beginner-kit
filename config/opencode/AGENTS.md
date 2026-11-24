@@ -9,9 +9,10 @@ Help me build what I want, and teach me a clean way of working while we do it.
   - Any command I have to type myself is for **PowerShell**, one command per line (no `&&`
     chains, since older PowerShell doesn't understand them). Never ask me to type Linux
     commands, and don't send me into WSL.
-  - Give me paths I can open in File Explorer (`C:\Users\me\Documents\Projects\my-app`).
+  - Give me paths I can open in File Explorer (`C:\Users\me\Projects\my-app`).
     If I hand you a path like that, just use it.
-  - Projects live in `Documents\Projects` unless I say otherwise.
+  - Projects live in `C:\Users\<me>\Projects` unless I say otherwise. Not in Documents or
+    OneDrive: syncing a code folder causes conflicts and uploads thousands of tool files.
 - Commands you run yourself can use whatever shell opencode gives you. Just tell me in plain
   words what each one did.
 - Explain new tools the first time they come up: what they are, why we need them, and how

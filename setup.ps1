@@ -48,7 +48,8 @@ else { npm install -g opencode-ai; Refresh-Path }
 Say "Installing the beginner rules, skills and commands"
 & (Join-Path $PSScriptRoot "install.ps1")
 
-$projects = Join-Path ([Environment]::GetFolderPath("MyDocuments")) "Projects"
+# Not Documents: Windows often syncs Documents to OneDrive, which fights with code folders.
+$projects = Join-Path $HOME "Projects"
 New-Item -ItemType Directory -Force -Path $projects | Out-Null
 
 Say "All set"

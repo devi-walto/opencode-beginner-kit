@@ -11,7 +11,7 @@ The user is a beginner. Explain each step in one plain sentence as you do it.
 
 - What's the app called? A working name is fine and can change later.
 - In one or two sentences, what does it do and who is it for?
-- Where should the folder go? Suggest `Documents\Projects\<name>` on Windows and
+- Where should the folder go? Suggest `C:\Users\<them>\Projects\<name>` on Windows (not Documents or OneDrive) and
   `~/Projects/<name>` on Mac or Linux. If they give you a path, use it.
 
 ## 2. Set up the folder

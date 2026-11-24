@@ -34,7 +34,7 @@ git clone https://github.com/devi-walto/opencode-beginner-kit.git "$HOME\opencod
 ```
 
 3. Run the setup. It installs the GitHub tool, Node.js and opencode, signs you in to GitHub
-   in your browser, installs the rules, and makes a `Documents\Projects` folder:
+   in your browser, installs the rules, and makes a `Projects` folder in your user folder:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File "$HOME\opencode-beginner-kit\setup.ps1"
@@ -47,7 +47,7 @@ opencode auth login
 ```
 
 ```powershell
-cd "$HOME\Documents\Projects"
+cd "$HOME\Projects"
 ```
 
 ```powershell
@@ -55,7 +55,7 @@ opencode
 ```
 
 Then type `/start`. You can tell the agent normal Windows paths
-(`C:\Users\you\Documents\Projects\my-app`); it handles the rest.
+(`C:\Users\you\Projects\my-app`); it handles the rest.
 
 No WSL needed. If a project ever needs Docker, the agent walks you through Docker Desktop at
 that point.
