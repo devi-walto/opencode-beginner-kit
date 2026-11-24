@@ -18,6 +18,9 @@ bug in one and the other one keeps it."
 4. **Near-twins:** two components that differ only in size or colour. That should be one
    component with an option.
 5. **Dead code:** files or functions nothing uses any more.
+6. **Things in the wrong drawer** (load the `project-structure` skill): a server call inside
+   a screen, app rules inside a route, secrets read outside settings, a shared piece copied
+   into two features, or junk folders like `misc/`, `old/` and `final_v2`.
 
 ## How to report
 

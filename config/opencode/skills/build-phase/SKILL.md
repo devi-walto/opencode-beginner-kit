@@ -19,7 +19,8 @@ description: Use when the beginner wants to build the next part of an approved s
 
 ## 1. Look before you write (DRY)
 
-Before writing code, search the project for things you can reuse: components, helpers,
+Load the `project-structure` skill (or follow the project's "Folder layout" in its
+`AGENTS.md`). Before writing code, search the project for things you can reuse: components, helpers,
 the theme file, similar screens. Tell them in one or two lines what you're reusing and
 what's new. If something new will be used in more than one place, make it a shared piece
 first. If you spot an existing copy, mention it and offer to fold it in.
@@ -44,11 +45,11 @@ first. If you spot an existing copy, mention it and offer to fold it in.
 
 ## 4. Save and stop
 
-- Commit: `git add -A && git commit -m "spec NN phase N: <what it does>"`. Explain that
-  this is the save point for the phase.
+- Commit (`git add -A`, then `git commit -m "spec NN phase N: <what it does>"`). Explain
+  that this is the save point for the phase.
 - Update the README if how to run the project changed.
 - **If it was the last phase:** set the spec's Status to "Done", merge the branch into
-  `main` (`git switch main && git merge feature-short_name`), and update `specs/README.md`.
+  `main` (`git switch main`, then `git merge feature-short_name`), and update `specs/README.md`.
   Ask before pushing anywhere.
 - **Stop.** Don't start the next phase on your own.
 

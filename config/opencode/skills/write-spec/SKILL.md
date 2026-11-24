@@ -47,7 +47,10 @@ interview. Common ones:
   they are in one sentence each.
 
 For each choice say what it **rules out later** and how hard it would be to change.
-Record what they pick and why in the spec's Decisions.
+Record what they pick and why in the spec's Decisions. In spec 01, once the tools are
+picked, load the `project-structure` skill and write the project's folder layout (that
+shape, renamed for the chosen tools) into the project's `AGENTS.md` under "Folder layout".
+Docker goes in only if this app really needs it (see the Docker rule).
 
 **Trade-offs to flag** whenever they come up: speed vs doing it properly, more features vs
 finishing sooner, convenience vs privacy, and building it ourselves vs using a ready-made

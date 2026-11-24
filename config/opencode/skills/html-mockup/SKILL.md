@@ -29,7 +29,7 @@ changing a built app takes much longer."
 1. Ask 2–3 quick questions if the spec doesn't already say: anything you've seen that you
    like? Light or dark? Any colours you love or hate?
 2. Make the mockups and tell them how to open them in their browser:
-   - Windows WSL: `explorer.exe "$(wslpath -w mockups/01-list.html)"`
+   - Windows (PowerShell): `start mockups\01-list.html`, or double-click it in File Explorer
    - Mac: `open mockups/01-list.html` · Linux: `xdg-open mockups/01-list.html`
 3. Ask what to change. Change only what they asked, and tell them what changed.
 4. When they say **approved**, write "Approved <date>" in the note box, link the mockup

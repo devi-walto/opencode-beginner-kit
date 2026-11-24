@@ -11,19 +11,20 @@ The user is a beginner. Explain each step in one plain sentence as you do it.
 
 - What's the app called? A working name is fine and can change later.
 - In one or two sentences, what does it do and who is it for?
-- Where should the folder go? Suggest `~/Projects/<name>`. On Windows with WSL, always keep
-  it on the Linux side (`~/...`), never under `/mnt/c/`, and explain that it's faster and
-  avoids line-ending mix-ups.
+- Where should the folder go? Suggest `Documents\Projects\<name>` on Windows and
+  `~/Projects/<name>` on Mac or Linux. If they give you a path, use it.
 
 ## 2. Set up the folder
 
-Make the folder, then create:
+Load the `project-structure` skill. It's the picture this project grows into. Today, make
+only the top level:
 
 ```
 <name>/
   README.md        what it is + how to run it (fill in "how to run" once there's code)
   AGENTS.md        project notes for the agent (see below)
   .gitignore       secrets, dependencies and build output never get saved to git
+  .gitattributes   one line: * text=auto eol=lf (same line endings on Windows, Mac and Linux)
   specs/
     README.md      list of specs and their status (table: #, name, what it delivers, status)
   mockups/         HTML mockups of screens, approved before building
@@ -31,7 +32,8 @@ Make the folder, then create:
 
 `.gitignore` should cover at least: `.env`, `.env.*`, `node_modules/`, `dist/`, `build/`,
 `__pycache__/`, `.venv/`, `.DS_Store`. Explain: "This is the list of files git should never
-save, like passwords and stuff the computer can rebuild."
+save, like passwords and stuff the computer can rebuild." The rest of the folders
+(frontend, backend and so on) arrive with the specs that need them.
 
 Project `AGENTS.md` (short):
 
@@ -42,6 +44,7 @@ What it is: <one or two sentences, the user's words>
 Who it's for: <...>
 Vision: specs/00-vision.md (written by the app interview, required before any spec)
 Tech choices: (draft after the interview, decided in spec 01)
+Folder layout: (written in spec 01 from the project-structure skill, for the tools picked)
 Current spec: none yet
 Shortcuts we took on purpose: (none yet)
 ```
