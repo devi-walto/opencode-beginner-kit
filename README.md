@@ -60,6 +60,34 @@ Then type `/start`. You can tell the agent normal Windows paths
 No WSL needed. If a project ever needs Docker, the agent walks you through Docker Desktop at
 that point.
 
+## Or let opencode set it up for you
+
+Already have opencode? Ask it: *"Set yourself up using the 'Setup steps for the agent'
+section of https://github.com/devi-walto/opencode-beginner-kit"*.
+
+### Setup steps for the agent
+
+You (the agent) are setting this kit up for a beginner. Explain each step in one plain
+sentence. Don't run anything that waits for typed input, because it would hang.
+
+1. Work out the system. On Windows, use PowerShell commands.
+2. If git or gh is missing, install them: `winget install --id Git.Git -e --source winget`
+   and `winget install --id GitHub.cli -e --source winget` (accept the agreements with
+   `--accept-package-agreements --accept-source-agreements`). Then refresh PATH in your
+   shell: `$env:Path = [Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [Environment]::GetEnvironmentVariable("Path","User")`.
+3. Clone this repo to `$HOME\opencode-beginner-kit` (Mac/Linux: `~/opencode-beginner-kit`).
+   Tell them this is their first `git clone` and what it means.
+4. Ask for their name and the email on their GitHub account (or GitHub's private no-reply
+   email). Then set `git config --global user.name`, `user.email` and
+   `init.defaultBranch main`.
+5. Run the installer: `powershell -ExecutionPolicy Bypass -File "$HOME\opencode-beginner-kit\install.ps1"`
+   (Mac/Linux: `bash ~/opencode-beginner-kit/install.sh`).
+6. Create `$HOME\Projects` (not inside Documents or OneDrive).
+7. GitHub sign-in needs a browser and a code, so they do it themselves. Tell them to open a
+   separate PowerShell window and run `gh auth login` (choose GitHub.com → HTTPS → Yes →
+   Login with a web browser), then `gh auth setup-git`.
+8. Tell them to close opencode, open it again in their `Projects` folder, and type `/start`.
+
 ## Get started on Mac or Linux
 
 Install git (Mac: `xcode-select --install`; Ubuntu: `sudo apt install -y git`), then:
